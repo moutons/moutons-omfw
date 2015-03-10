@@ -1,0 +1,14 @@
+{
+  "name": "moutons-omfw",
+  "version": "0.1.0",
+  "author": "moutons",
+  "summary": "Puppetmaster iptables settings for vagrant Oscar plugin",
+  "license": "MIT",
+  "source": "https://github.com/moutons/moutons-omfw",
+  "project_page": "https://github.com/moutons/moutons-omfw",
+  "issues_url": "https://github.com/moutons/moutons-omfw/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
