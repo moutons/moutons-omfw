@@ -36,6 +36,12 @@
 # Copyright 2015 Your name here, unless otherwise noted.
 #
 class omfw {
+  stage { 'fw_pre':  before  => Stage['main']; }
+  stage { 'fw_post': require => Stage['main']; }
 
+  class { 'firewall': stage => 'fw_pre', }
+  class { 'omfw::pre': stage => 'fw_pre', }
+  class { 'omfw::post': stage => 'fw_post', }
 
+  resources { "firewall": purge => true }
 }
